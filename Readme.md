@@ -6,7 +6,7 @@ Angular Frontend application for Linux4Hope [Spero-BaasBox](https://github.com/L
 
 ## Build, Testing, Development
 
-1. Need to have [Nodejs](https://nodejs.org/en/), [NPM](https://www.npmjs.com/), and [AngularCLI](https://cli.angular.io/) installed on your system globally. This guide assumes you are running a 16.04 LTS 64bit Ubuntu system. If running a Debian/Ubuntu system and you do not have the packages installed globally, run these commands below:
+1. Need to have [Nodejs](https://nodejs.org/en/), [NPM](https://www.npmjs.com/), [AngularCLI](https://cli.angular.io/), and [Chrome](https://www.google.com/chrome/) installed on your system globally. This guide assumes you are running a 16.04 LTS 64bit Ubuntu system. If running a Debian/Ubuntu system and you do not have the packages installed globally, run these commands below:
 
         sudo apt update
         sudo apt upgrade -y
@@ -17,6 +17,9 @@ Angular Frontend application for Linux4Hope [Spero-BaasBox](https://github.com/L
         sudo apt install npm
         sudo npm install -g npm
         sudo npm install -g @angular/cli
+        sudo apt install gdebi -y
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo gdebi google-chrome-stable_current_amd64.deb --n
 
 2. Clone this repo.
 
@@ -26,4 +29,5 @@ Angular Frontend application for Linux4Hope [Spero-BaasBox](https://github.com/L
 container or through a proxy, run `ng serve --host 0.0.0.0 --disable-host-check`
 to listen to all ports and disable security checks.
 
-5. Run `grunt test` to make sure the app will past some unit testing if you are making changes to the app. This is a small safety measure to make sure your changes do not have an adverse effect.
+5. Run `ng test` to make sure the app will past some unit testing if you are making changes to the app. This is a small safety measure to make sure your changes do not have an adverse effect. `ng test` will run Chrome in headless mode, however, you can have
+the gui view of Karma by going to port 9876 in your Chrome browser. If you like for Karma to kill it's process after tests, run `ng test --watch false`.
