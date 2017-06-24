@@ -33,7 +33,7 @@ module.exports = function (config) {
         ],
       }
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml','coverage', 'coveralls'], //added coverage and coveralls
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
