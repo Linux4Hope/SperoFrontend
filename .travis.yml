@@ -1,0 +1,16 @@
+sudo: false
+dist: trusty
+addons:
+  chrome: stable
+cache:
+  directories:
+    - "l4h-app/node_modules"
+language: node_js
+node_js:
+  - "6"
+script:
+  - cd l4h-app
+  - npm install
+  - ng serve &
+  - ng test --watch false
+  - ng e2e
