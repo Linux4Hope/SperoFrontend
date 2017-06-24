@@ -9,6 +9,8 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
+      require('karma-coverage'), //added coverage
+      require('karma-coveralls'), //added coveralls
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma')
     ],
