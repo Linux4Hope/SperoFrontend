@@ -31,7 +31,7 @@ to listen to all ports and disable security checks.
 
 5. Run `ng test` to make sure the app will past some unit testing if you are making changes to the app. This is a small safety measure to make sure your changes do not have an adverse effect. `ng test` will run Chrome in headless mode, however, you can have
 the gui view of Karma by going to port 9876 in your Chrome browser. If you like for Karma to kill it's process after tests, run `ng test --watch false`. Run `ng e2e` for additional tests.
-`ng test` is ran by [Karma](https://karma-runner.github.io) and `ng e2e` does end to end testing using [Protractor](http://www.protractortest.org/). Make sure you call `ng serve` and have the server running for `ng e2e`. When running for code coverage, run `ng test ng test --code-coverage --watch false`.
+`ng test` is ran by [Karma](https://karma-runner.github.io) and `ng e2e` does end to end testing using [Protractor](http://www.protractortest.org/). Make sure you call `ng serve` and have the server running for `ng e2e`. When running for code coverage, run `ng test --code-coverage --watch false`.
 
 6. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 

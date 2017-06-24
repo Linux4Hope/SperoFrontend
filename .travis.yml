@@ -12,5 +12,5 @@ script:
   - cd l4h-app
   - npm install
   - ng serve &
-  - ng test --watch false
+  - ng test --code-coverage --watch false
   - ng e2e
