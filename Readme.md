@@ -1,4 +1,4 @@
-# Spero
+# Spero [![Build Status](https://travis-ci.org/Linux4Hope/SperoFrontend.svg?branch=master)](https://travis-ci.org/Linux4Hope/SperoFrontend)
 
 ## Description
 
