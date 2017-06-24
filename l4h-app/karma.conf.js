@@ -35,7 +35,7 @@ module.exports = function (config) {
         ],
       }
     },
-    reporters: ['progress', 'kjhtml','coverage', 'coveralls'], //added coverage and coveralls
+    reporters: ['progress', 'kjhtml','coverage-istanbul','coverage', 'coveralls'], //added coverage-istanbul, coverage, coveralls
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
