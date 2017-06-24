@@ -6,8 +6,8 @@ language: node_js
 node_js:
   - "6"
 script:
-  cd l4h-app
-  npm install
-  npm serve &
-  npm test --watch false
-  npm e2e
+  - cd l4h-app
+  - npm install
+  - npm serve &
+  - npm test --watch false
+  - npm e2e
