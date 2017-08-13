@@ -23,7 +23,7 @@ Angular Frontend application for Linux4Hope [Spero-BaasBox](https://github.com/L
 
 2. Clone this repo.
 
-3. In the root of the project folder, run `npm install`.
+3. In the root of the project folder, run `cd l4h-app` and then `npm install`.
 
 4. Run `ng serve` for live preview in the `l4h-app` directory. You can then browse the site after opening your browser to the url that the server has informed you. If you have the app in a
 container or through a proxy, run `ng serve --host 0.0.0.0 --disable-host-check`
